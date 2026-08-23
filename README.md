@@ -6,29 +6,13 @@ Monitor Buddy lets you switch compatible monitor inputs with configurable keyboa
 
 ## 🚀 Get Monitor Buddy
 
-Visit the official website for the latest release, product information, and setup guidance:
+**[Download the latest release](https://github.com/rs3166252/MonitorBuddy/releases)**
+
+Visit the official website for the product overview, compatibility information, setup guidance, and the full project story:
 
 **https://monitorbuddy.cstrikerdj.in**
 
-## 🎥 How to use
-
-The official YouTube walkthrough will be linked here when published.
-
-For setup questions and practical help, use the YouTube comments or join the Discord community.
-
-## 💬 Community & Support
-
-**Discord:** https://discord.cstrikerdj.in
-
-**YouTube:** Official tutorial link coming soon.
-
-## 🐛 Report a bug
-
-Found a reproducible problem? Please open a **GitHub Issue** and include your Windows version, monitor model, connection type, what you expected, what happened, and any useful error information.
-
-GitHub Issues are for actual bugs and reproducible technical problems. General questions and setup help are better suited to Discord or YouTube comments.
-
-## What it does
+## ✨ What it does
 
 - DDC/CI-based monitor input switching
 - Per-monitor profiles
@@ -39,7 +23,7 @@ GitHub Issues are for actual bugs and reproducible technical problems. General q
 - Portable operation with setup assistance
 - Automatic ControlMyMonitor dependency setup with manual EXE/ZIP fallback
 
-## Requirements & compatibility
+## 🖥️ Requirements & compatibility
 
 - Windows
 - A monitor that exposes the required DDC/CI controls
@@ -50,6 +34,39 @@ Compatibility depends on the monitor, firmware, connection path, GPU/driver beha
 **DDC/CI support does not guarantee that every function, including input switching, is available.**
 
 Monitor Buddy is designed to be dynamic and portable. When users report compatibility problems, we investigate and patch issues where the problem can be addressed by the application. Some limitations may ultimately come from the monitor's own DDC/CI implementation.
+
+## 🎥 How to use
+
+The official YouTube walkthrough will be linked here when published.
+
+For setup questions and practical help, use the YouTube comments or join the Discord community.
+
+## 💬 Community & support
+
+**Discord:** https://discord.cstrikerdj.in
+
+**YouTube:** Official tutorial link coming soon.
+
+**GitHub Issues:** Use Issues for reproducible bugs and technical problems.
+
+## 🐛 Report a bug
+
+Found a reproducible problem? Please open a **GitHub Issue** and include:
+
+- Windows version
+- Monitor model
+- Connection type
+- What you expected to happen
+- What actually happened
+- Steps to reproduce
+- Any useful error information or screenshots
+
+General questions and setup help are better suited to Discord or YouTube comments.
+
+## 📋 Releases & changelog
+
+- **[Latest releases](https://github.com/rs3166252/MonitorBuddy/releases)** — download published Windows builds
+- **[Changelog](CHANGELOG.md)** — see what changed between releases
 
 ## ❤️ The story behind Monitor Buddy
 
@@ -91,11 +108,11 @@ Monitor Buddy is an independent CStrikerDJ project. The development, testing, de
 
 People, videos, tools, and projects mentioned here are credited for inspiration or technical reference where applicable. They are **not affiliated with, responsible for, or associated with the development of Monitor Buddy.**
 
-## Privacy
+## 🔒 Privacy
 
 Monitor Buddy is a local Windows utility. It does not require an online account for normal operation.
 
-## License
+## 📄 License
 
 See [LICENSE](LICENSE).
 
