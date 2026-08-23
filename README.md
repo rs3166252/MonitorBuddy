@@ -12,9 +12,9 @@ Visit the official website for the latest release, product information, and setu
 
 ## 🎥 How to use
 
-A YouTube walkthrough will be linked here when the official tutorial is published.
+The official YouTube walkthrough will be linked here when published.
 
-For setup questions and practical help, use the YouTube video comments or join the Discord community.
+For setup questions and practical help, use the YouTube comments or join the Discord community.
 
 ## 💬 Community & Support
 
@@ -26,7 +26,7 @@ For setup questions and practical help, use the YouTube video comments or join t
 
 Found a reproducible problem? Please open a **GitHub Issue** and include your Windows version, monitor model, connection type, what you expected, what happened, and any useful error information.
 
-GitHub Issues are intended for actual bugs and reproducible technical problems. General questions and setup help are better suited to Discord or the YouTube comments.
+GitHub Issues are for actual bugs and reproducible technical problems. General questions and setup help are better suited to Discord or YouTube comments.
 
 ## What it does
 
@@ -45,7 +45,9 @@ GitHub Issues are intended for actual bugs and reproducible technical problems. 
 - A monitor that exposes the required DDC/CI controls
 - A display connection that allows DDC/CI communication
 
-Compatibility depends on monitor firmware, connection path, GPU/driver behavior, and the DDC/CI capabilities exposed by the display. DDC/CI support does not guarantee that every function, including input switching, is available.
+Compatibility depends on the monitor, firmware, connection path, GPU/driver behavior, and the DDC/CI capabilities exposed by the display.
+
+**DDC/CI support does not guarantee that every function, including input switching, is available.**
 
 Monitor Buddy is designed to be dynamic and portable. When users report compatibility problems, we investigate and patch issues where the problem can be addressed by the application. Some limitations may ultimately come from the monitor's own DDC/CI implementation.
 
@@ -53,29 +55,41 @@ Monitor Buddy is designed to be dynamic and portable. When users report compatib
 
 Monitor Buddy started with a problem we were actually struggling with: switching between a PC, PS5, and other devices on one monitor without constantly reaching for the monitor controls.
 
-We searched for a solution. We heard about monitor-control software, but our monitor did not provide the feature we needed, and we were left looking for a way to do it without expensive hardware.
+We searched for a solution, but our monitor did not provide the feature we needed and we did not want to solve the problem by buying expensive hardware.
 
-During that search we found the YouTube video **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** We noticed a few important things: ControlMyMonitor, commands, and the idea of using keyboard shortcuts. Then came the question: **“What if we took those two things to the next level?”**
+During that search we found the YouTube video **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** The video introduced us to **ControlMyMonitor**, commands, and the idea of using keyboard shortcuts to control monitor functions.
+
+Then came the question:
+
+> **“What if we took those things to the next level?”**
 
 We started building our own solution. The early experiments moved through Python, C#, and PowerShell. We connected pieces, tested them, broke things, fixed them, and kept going until Monitor Buddy became a real application that worked for our setup.
 
-And then came the obvious question: **why keep it just for ourselves?** Other people have one-screen setups, PCs and consoles, and hardware they cannot or do not want to replace. So we decided to make Monitor Buddy free, with optional community support in the future if people want to help development continue.
+Once it worked, we asked a second question:
 
-The development process was not magic. It was build → test → break → investigate → fix → test again. And yes, there was an AI sitting next to us confidently suggesting things that sometimes broke the exact thing we had just fixed. 😂
+> **“Why keep it just for ourselves?”**
+
+Other people have one-screen setups, PCs and consoles, and hardware they cannot or do not want to replace. So we decided to make Monitor Buddy free, with optional community support in the future if people want to help development continue.
+
+The development process was simple in theory:
+
+**Build → test → break → investigate → fix → test again.**
+
+And yes, there was an AI sitting next to us confidently suggesting things that sometimes broke the exact thing we had just fixed. 😂
 
 ### 🙏 Where the idea started
 
-A special thank-you to the creator of **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** The video introduced us to ControlMyMonitor and the command-based approach that helped us start exploring this problem.
+A special thank-you to the creator of **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** The video helped us discover ControlMyMonitor and the command-based approach that gave us a direction to explore.
 
-The video gave us a direction. **Monitor Buddy is our own independent implementation and project.**
+The video gave us a starting point. **Monitor Buddy is our own independent implementation and project.**
 
-Original inspiration video: https://www.youtube.com/watch?v=ue2dijq7wdM
+**Original inspiration video:** https://www.youtube.com/watch?v=ue2dijq7wdM
 
 ### 🔗 Independent project
 
 Monitor Buddy is an independent CStrikerDJ project. The development, testing, design, maintenance, and decisions behind Monitor Buddy are our own.
 
-People, videos, tools, and projects mentioned here are credited for inspiration or technical reference where applicable. They are not affiliated with, responsible for, or associated with the development of Monitor Buddy.
+People, videos, tools, and projects mentioned here are credited for inspiration or technical reference where applicable. They are **not affiliated with, responsible for, or associated with the development of Monitor Buddy.**
 
 ## Privacy
 
