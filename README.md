@@ -18,7 +18,7 @@ For setup questions and practical help, use the YouTube video comments or join t
 
 ## 💬 Community & Support
 
-**Discord:** https://discord.gg/Y6EUwnwsNK
+**Discord:** https://discord.cstrikerdj.in
 
 **YouTube:** Official tutorial link coming soon.
 
@@ -39,13 +39,43 @@ GitHub Issues are intended for actual bugs and reproducible technical problems. 
 - Portable operation with setup assistance
 - Automatic ControlMyMonitor dependency setup with manual EXE/ZIP fallback
 
-## Requirements
+## Requirements & compatibility
 
 - Windows
 - A monitor that exposes the required DDC/CI controls
 - A display connection that allows DDC/CI communication
 
-Compatibility depends on monitor firmware, connection path, GPU/driver behavior, and the DDC/CI capabilities exposed by the display.
+Compatibility depends on monitor firmware, connection path, GPU/driver behavior, and the DDC/CI capabilities exposed by the display. DDC/CI support does not guarantee that every function, including input switching, is available.
+
+Monitor Buddy is designed to be dynamic and portable. When users report compatibility problems, we investigate and patch issues where the problem can be addressed by the application. Some limitations may ultimately come from the monitor's own DDC/CI implementation.
+
+## ❤️ The story behind Monitor Buddy
+
+Monitor Buddy started with a problem we were actually struggling with: switching between a PC, PS5, and other devices on one monitor without constantly reaching for the monitor controls.
+
+We searched for a solution. We heard about monitor-control software, but our monitor did not provide the feature we needed, and we were left looking for a way to do it without expensive hardware.
+
+During that search we found the YouTube video **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** We noticed a few important things: ControlMyMonitor, commands, and the idea of using keyboard shortcuts. Then came the question: **“What if we took those two things to the next level?”**
+
+We started building our own solution. The early experiments moved through Python, C#, and PowerShell. We connected pieces, tested them, broke things, fixed them, and kept going until Monitor Buddy became a real application that worked for our setup.
+
+And then came the obvious question: **why keep it just for ourselves?** Other people have one-screen setups, PCs and consoles, and hardware they cannot or do not want to replace. So we decided to make Monitor Buddy free, with optional community support in the future if people want to help development continue.
+
+The development process was not magic. It was build → test → break → investigate → fix → test again. And yes, there was an AI sitting next to us confidently suggesting things that sometimes broke the exact thing we had just fixed. 😂
+
+### 🙏 Where the idea started
+
+A special thank-you to the creator of **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** The video introduced us to ControlMyMonitor and the command-based approach that helped us start exploring this problem.
+
+The video gave us a direction. **Monitor Buddy is our own independent implementation and project.**
+
+Original inspiration video: https://www.youtube.com/watch?v=ue2dijq7wdM
+
+### 🔗 Independent project
+
+Monitor Buddy is an independent CStrikerDJ project. The development, testing, design, maintenance, and decisions behind Monitor Buddy are our own.
+
+People, videos, tools, and projects mentioned here are credited for inspiration or technical reference where applicable. They are not affiliated with, responsible for, or associated with the development of Monitor Buddy.
 
 ## Privacy
 
@@ -59,3 +89,5 @@ See [LICENSE](LICENSE).
 
 **Monitor Buddy**  
 Universal monitor input control for Windows.
+
+**Built because we needed it. Shared because someone else might need it too.**
