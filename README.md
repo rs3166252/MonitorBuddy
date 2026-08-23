@@ -4,20 +4,39 @@
 
 Monitor Buddy lets you switch compatible monitor inputs with configurable keyboard shortcuts using DDC/CI.
 
-## What is Monitor Buddy?
+## 🚀 Get Monitor Buddy
 
-If you use one monitor for a PC and another device such as a PS5, Monitor Buddy gives you a quick way to change the monitor input without reaching for the monitor buttons.
+Visit the official website for the latest release, product information, and setup guidance:
 
-## Features
+**https://monitorbuddy.cstrikerdj.in**
+
+## 🎥 How to use
+
+A YouTube walkthrough will be linked here when the official tutorial is published.
+
+For setup questions and practical help, use the YouTube video comments or join the Discord community.
+
+## 💬 Community & Support
+
+**Discord:** https://discord.gg/Y6EUwnwsNK
+
+**YouTube:** Official tutorial link coming soon.
+
+## 🐛 Report a bug
+
+Found a reproducible problem? Please open a **GitHub Issue** and include your Windows version, monitor model, connection type, what you expected, what happened, and any useful error information.
+
+GitHub Issues are intended for actual bugs and reproducible technical problems. General questions and setup help are better suited to Discord or the YouTube comments.
+
+## What it does
 
 - DDC/CI-based monitor input switching
 - Per-monitor profiles
 - Configurable input names and keyboard shortcuts
 - Multiple connected monitors can have their own profiles
-- Only the active monitor profile responds to shortcuts
-- System-tray control
-- Portable operation — no traditional installation required
-- Desktop shortcut created by setup
+- Refresh and scan controls for monitor/input discovery
+- System-tray operation
+- Portable operation with setup assistance
 - Automatic ControlMyMonitor dependency setup with manual EXE/ZIP fallback
 
 ## Requirements
@@ -26,35 +45,7 @@ If you use one monitor for a PC and another device such as a PS5, Monitor Buddy 
 - A monitor that exposes the required DDC/CI controls
 - A display connection that allows DDC/CI communication
 
-Compatibility depends on the monitor firmware, connection path, GPU/driver behavior, and the DDC/CI capabilities exposed by the display.
-
-## Download & full information
-
-**Official website:** https://monitorbuddy.cstrikerdj.in
-
-The website has the latest release information, setup details, compatibility information, and downloads.
-
-## 🎥 How to use
-
-For setup and usage, watch the official Monitor Buddy YouTube tutorial and use the video comments for questions and help.
-
-## 💬 Community support
-
-For general questions, discussion, and help, join the Monitor Buddy community on Discord.
-
-## 🐛 Report a problem
-
-Found a reproducible bug? **Open a GitHub Issue.**
-
-Please include your Windows version, monitor model, connection type, what you expected, what happened, and any relevant error information.
-
-For general setup questions, please use the YouTube comments or Discord instead of opening an issue.
-
-## Releases
-
-Stable downloads are published through the **Releases** section of this repository.
-
-This public repository intentionally contains only the information needed to use and support Monitor Buddy. The implementation source code is not distributed here.
+Compatibility depends on monitor firmware, connection path, GPU/driver behavior, and the DDC/CI capabilities exposed by the display.
 
 ## Privacy
 
@@ -68,5 +59,3 @@ See [LICENSE](LICENSE).
 
 **Monitor Buddy**  
 Universal monitor input control for Windows.
-
-Official website: **https://monitorbuddy.cstrikerdj.in**
