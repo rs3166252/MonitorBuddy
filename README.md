@@ -88,17 +88,17 @@ We wanted a simple software solution. Our monitor did not provide the feature we
 
 ### 🔎 Finding the starting point
 
-While searching for a solution, we found the YouTube video **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** It introduced us to **ControlMyMonitor**, DDC/CI commands, and the idea that monitor functions could be controlled from Windows with keyboard shortcuts.
+While searching for a solution, we found the YouTube video **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** It introduced us to **ControlMyMonitor (CMM)**, DDC/CI commands, and the idea that monitor functions could be controlled from Windows with keyboard shortcuts.
 
 That gave us the starting point. Then came the question:
 
 > **“What if we took those things to the next level?”**
 
-### 🧪 From a PowerShell experiment to a proper application
+### 🧪 From experiments to a proper application
 
 The first versions were experiments. We moved between **PowerShell, Python, and C#**, testing different ways to communicate with the monitor and make the idea actually work.
 
-One of the early PowerShell-based versions worked, but it was not the release experience we wanted. Some security tools also flagged the early script-based approach, which made it clear that simply making the feature work was not enough.
+One of the early PowerShell-based versions worked, but it was not the release experience we wanted. Some security tools also flagged the early script-based approach, which made one thing very clear: **making the feature work was only the beginning.**
 
 We wanted something better:
 
@@ -107,6 +107,24 @@ We wanted something better:
 So we kept rebuilding and testing. We connected pieces, broke things, investigated what went wrong, fixed them, and tested again.
 
 Eventually, the project became what we wanted it to be: **Monitor Buddy as an actual application**, rather than just a collection of scripts and experiments.
+
+### 🙏 Thank you to ControlMyMonitor
+
+A very special thank-you goes to **ControlMyMonitor and its creator, Nir Sofer / NirSoft**.
+
+ControlMyMonitor gave us an important technical foundation for the project. Instead of having to build the entire monitor-control layer from scratch, we could experiment with real DDC/CI monitor controls and command-line operations. That made it possible for us to explore the idea, learn what was possible, and gradually build Monitor Buddy around the problem we were trying to solve.
+
+We also genuinely respect the fact that ControlMyMonitor is provided as freeware. The official ControlMyMonitor license allows free distribution as long as the utility is not charged for, sold, or distributed as part of a commercial product, and requires the distributed files to be included without modification. citeturn0search0
+
+Because Monitor Buddy currently uses the **ControlMyMonitor executable**, we chose to keep Monitor Buddy **free and publicly available** rather than turn the project into a paid product built around a dependency whose license does not permit commercial distribution.
+
+That decision felt right to us.
+
+> **If a project can put so much work into making a powerful tool available for free, why shouldn't we do the same with what we build on top of it?**
+
+CMM gave us a foundation to experiment with. Monitor Buddy is our independent application built around our own user experience, configuration, monitor identification, profiles, shortcuts, startup behavior, and other project-specific work.
+
+We are grateful for the work that made our experiment possible. ❤️
 
 ### 🚀 The build we finally wanted to share
 
@@ -118,7 +136,7 @@ It also includes the things we learned were important during development, includ
 
 And after all the early experiments, we checked the final public release with VirusTotal. The release ZIP received **0 / 64 detections** at the time of analysis.
 
-That result matters to us because this project did not start as a polished application. It started as a problem, an experiment, and a lot of trial and error — and eventually became something we were comfortable putting in public.
+That result matters to us because this project did not start as a polished application. It started as a problem, an experiment, and a lot of trial and error — including early versions that were not suitable for a public release — and eventually became something we were comfortable putting in public.
 
 ### ❤️ Why release it?
 
@@ -138,6 +156,20 @@ And yes, there was an AI sitting next to us confidently suggesting things that s
 
 But that's part of the story too.
 
+### 🎯 From a flagged experiment to a release we could stand behind
+
+One of the most important parts of this journey was realizing that a working prototype is not automatically a good public product.
+
+The early script-based approach helped prove the idea, but security warnings showed us that we needed to take the next step. We did not want people downloading Monitor Buddy and immediately wondering why their security software was complaining about the way it was built.
+
+So we rebuilt, tested, simplified the distribution, and moved toward a proper application.
+
+The result is **Monitor Buddy v1.1.0 — Actual App**: a portable Windows release that can be extracted and launched without a traditional installer.
+
+Before publishing, we also scanned the release ZIP with VirusTotal. At the time of analysis, it received **0 / 64 detections**.
+
+That does not mean any software can be guaranteed universally safe forever, but it was an important checkpoint for us: **we finally had a release we felt comfortable putting in front of other people.**
+
 ### 🙏 Where the idea started
 
 A special thank-you to the creator of **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** The video helped us discover ControlMyMonitor and the command-based approach that gave us a direction to explore.
@@ -150,7 +182,7 @@ The video gave us a starting point. **Monitor Buddy is our own independent imple
 
 Monitor Buddy is an independent CStrikerDJ project. The development, testing, design, maintenance, and decisions behind Monitor Buddy are our own.
 
-People, videos, tools, and projects mentioned here are credited for inspiration or technical reference where applicable. They are **not affiliated with, responsible for, or associated with the development of Monitor Buddy.**
+ControlMyMonitor / NirSoft, the inspiration video, and other third-party tools or projects mentioned here are credited for their respective contributions or technical reference. They are **not affiliated with, responsible for, or associated with the development of Monitor Buddy.**
 
 ## 🔒 Privacy
 
