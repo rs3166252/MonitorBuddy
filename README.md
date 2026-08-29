@@ -82,29 +82,61 @@ General questions and setup help are better suited to Discord or YouTube comment
 
 ## ❤️ The story behind Monitor Buddy
 
-Monitor Buddy started with a problem we were actually struggling with: switching between a PC, PS5, and other devices on one monitor without constantly reaching for the monitor controls.
+Monitor Buddy started with a very simple problem: switching between a PC, PS5, and other devices on one monitor without constantly reaching for the monitor's physical controls.
 
-We searched for a solution, but our monitor did not provide the feature we needed and we did not want to solve the problem by buying expensive hardware.
+We wanted a simple software solution. Our monitor did not provide the feature we needed, and we did not want to solve the problem by buying expensive hardware just to make input switching easier.
 
-During that search we found the YouTube video **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** The video introduced us to **ControlMyMonitor**, commands, and the idea of using keyboard shortcuts to control monitor functions.
+### 🔎 Finding the starting point
 
-Then came the question:
+While searching for a solution, we found the YouTube video **“Tech Tip: Switch Monitor Input with a Keyboard Shortcut.”** It introduced us to **ControlMyMonitor**, DDC/CI commands, and the idea that monitor functions could be controlled from Windows with keyboard shortcuts.
+
+That gave us the starting point. Then came the question:
 
 > **“What if we took those things to the next level?”**
 
-We started building our own solution. The early experiments moved through Python, C#, and PowerShell. We connected pieces, tested them, broke things, fixed them, and kept going until Monitor Buddy became a real application that worked for our setup.
+### 🧪 From a PowerShell experiment to a proper application
 
-Once it worked, we asked a second question:
+The first versions were experiments. We moved between **PowerShell, Python, and C#**, testing different ways to communicate with the monitor and make the idea actually work.
+
+One of the early PowerShell-based versions worked, but it was not the release experience we wanted. Some security tools also flagged the early script-based approach, which made it clear that simply making the feature work was not enough.
+
+We wanted something better:
+
+**A proper Windows application. A portable build. A simple experience. And a release that people could download with confidence.**
+
+So we kept rebuilding and testing. We connected pieces, broke things, investigated what went wrong, fixed them, and tested again.
+
+Eventually, the project became what we wanted it to be: **Monitor Buddy as an actual application**, rather than just a collection of scripts and experiments.
+
+### 🚀 The build we finally wanted to share
+
+The current application is designed around the original goal: make monitor input switching easier without forcing people to buy additional hardware.
+
+The public **v1.1.0 Actual App** release is portable — there is no traditional installer. Extract the ZIP, run the application, and use it.
+
+It also includes the things we learned were important during development, including monitor identification, DDC/CI control, startup support, and a straightforward user experience.
+
+And after all the early experiments, we checked the final public release with VirusTotal. The release ZIP received **0 / 64 detections** at the time of analysis.
+
+That result matters to us because this project did not start as a polished application. It started as a problem, an experiment, and a lot of trial and error — and eventually became something we were comfortable putting in public.
+
+### ❤️ Why release it?
+
+Once it worked for our setup, we asked a second question:
 
 > **“Why keep it just for ourselves?”**
 
-Other people have one-screen setups, PCs and consoles, and hardware they cannot or do not want to replace. So we decided to make Monitor Buddy free, with optional community support in the future if people want to help development continue.
+Other people have one-screen setups, PCs and consoles, and hardware they cannot or do not want to replace. If Monitor Buddy can save someone else from repeatedly reaching behind their monitor, then the project is worth sharing.
+
+So we decided to make Monitor Buddy free and available publicly, with optional community support in the future if people want to help development continue.
 
 The development process was simple in theory:
 
 **Build → test → break → investigate → fix → test again.**
 
 And yes, there was an AI sitting next to us confidently suggesting things that sometimes broke the exact thing we had just fixed. 😂
+
+But that's part of the story too.
 
 ### 🙏 Where the idea started
 
