@@ -49,6 +49,18 @@ For setup questions and practical help, use the YouTube comments or join the Dis
 
 **GitHub Issues:** Use Issues for reproducible bugs and technical problems.
 
+## 🛡️ Security
+
+The **Monitor Buddy v1.1.0** release ZIP was scanned with VirusTotal.
+
+**Result: 0 / 64 security vendors detected the file as malicious at the time of analysis.**
+
+**SHA-256:**
+
+`8cfab64e6480f855f83a78f480902a9d2b9f030c6606b47297ee3ba5d3dfae34`
+
+**[View VirusTotal Scan Results](https://www.virustotal.com/gui/file/8cfab64e6480f855f83a78f480902a9d2b9f030c6606b47297ee3ba5d3dfae34/detection)**
+
 ## 🐛 Report a bug
 
 Found a reproducible problem? Please open a **GitHub Issue** and include:
