@@ -51,15 +51,20 @@ For setup questions and practical help, use the YouTube comments or join the Dis
 
 ## 🛡️ Security
 
-The **Monitor Buddy v1.1.0** release ZIP was scanned with VirusTotal.
+The **Monitor Buddy v1.1.0** release was checked with VirusTotal.
 
-**Result: 0 / 64 security vendors detected the file as malicious at the time of analysis.**
+- **MonitorBuddy.exe:** 0 / 70 detections
+- **Release ZIP:** 2 / 67 heuristic detections
 
-**SHA-256:**
+The two detections are generic heuristic/ML detections associated with `MonitorBuddy.dll`. No specific malware family is identified by these detections. Major antivirus engines currently report the application as undetected.
 
-`8cfab64e6480f855f83a78f480902a9d2b9f030c6606b47297ee3ba5d3dfae34`
+The application source code is publicly available so users can inspect the implementation and compile Monitor Buddy independently.
 
-**[View VirusTotal Scan Results](https://www.virustotal.com/gui/file/8cfab64e6480f855f83a78f480902a9d2b9f030c6606b47297ee3ba5d3dfae34/detection)**
+**Release ZIP SHA-256:**
+
+`34d1cf91bac83b98314c52ddf79f2e8c4482f011526d08d166bd90d28634ac1c`
+
+**[View VirusTotal Scan Results](https://www.virustotal.com/gui/file/34d1cf91bac83b98314c52ddf79f2e8c4482f011526d08d166bd90d28634ac1c/detection)**
 
 ## 🐛 Report a bug
 
@@ -134,7 +139,7 @@ The public **v1.1.0 Actual App** release is portable — there is no traditional
 
 It also includes the things we learned were important during development, including monitor identification, DDC/CI control, startup support, and a straightforward user experience.
 
-And after all the early experiments, we checked the final public release with VirusTotal. The release ZIP received **0 / 64 detections** at the time of analysis.
+And after all the early experiments, we checked the final public release with VirusTotal. The current release ZIP has **2 / 67 heuristic detections**, while the main **MonitorBuddy.exe** has **0 / 70 detections**. The two generic detections are associated with `MonitorBuddy.dll` and do not identify a specific malware family.
 
 That result matters to us because this project did not start as a polished application. It started as a problem, an experiment, and a lot of trial and error — including early versions that were not suitable for a public release — and eventually became something we were comfortable putting in public.
 
@@ -166,9 +171,9 @@ So we rebuilt, tested, simplified the distribution, and moved toward a proper ap
 
 The result is **Monitor Buddy v1.1.0 — Actual App**: a portable Windows release that can be extracted and launched without a traditional installer.
 
-Before publishing, we also scanned the release ZIP with VirusTotal. At the time of analysis, it received **0 / 64 detections**.
+Before publishing, we also scanned the release with VirusTotal. The current release ZIP has **2 / 67 heuristic detections**, while **MonitorBuddy.exe has 0 / 70 detections**. The two generic detections are associated with `MonitorBuddy.dll` and do not identify a specific malware family.
 
-That does not mean any software can be guaranteed universally safe forever, but it was an important checkpoint for us: **we finally had a release we felt comfortable putting in front of other people.**
+That does not mean any software can be guaranteed universally safe forever, but it was an important checkpoint for us: **we publish the scan status openly, provide the exact release hash, and make the source code available for independent inspection.**
 
 ### 🙏 Where the idea started
 
